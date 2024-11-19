@@ -30,15 +30,18 @@ def main():
 
         j=0
         y=0
+        j+=-1
         key_lst = pg.key.get_pressed()
         if not key_lst[pg.K_RIGHT]:
-            j=-1
+            j+=0
         if key_lst[pg.K_RIGHT]:
-            j=1
+            j+=2
         if key_lst[pg.K_UP]:
-            y=-1
+            y+=-1
         if key_lst[pg.K_DOWN]:
-            y=1
+            y+=1
+        if key_lst[pg.K_LEFT]:
+            j+=-1    
         kk_rct.move_ip((j,y))
         
         
