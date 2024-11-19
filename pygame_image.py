@@ -33,16 +33,13 @@ def main():
         key_lst = pg.key.get_pressed()
         if not key_lst[pg.K_RIGHT]:
             j=-1
-            kk_rct.move_ip((j,y))
         if key_lst[pg.K_RIGHT]:
             j=1
-            kk_rct.move_ip((j,y))
         if key_lst[pg.K_UP]:
             y=-1
-            kk_rct.move_ip((j,y))
         if key_lst[pg.K_DOWN]:
             y=1
-            kk_rct.move_ip((j,y))
+        kk_rct.move_ip((j,y))
         
         
         screen.blit(kk_img, kk_rct)
